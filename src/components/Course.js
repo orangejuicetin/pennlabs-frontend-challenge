@@ -53,7 +53,9 @@ export const Course = props => {
         {props.dept} {props.number}
       </Title>
       <Subtitle onClick={() => setActive(!active)}>{props.title}</Subtitle>
-      <Content active={active}>{props.description}</Content>
+      <Content active={active}>
+        <p>{props.description}</p>
+      </Content>
     </Wrapper>
   );
 };
